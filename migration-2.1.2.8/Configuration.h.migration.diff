@@ -1,0 +1,24 @@
+--- Ancienne Configuration/Configuration.h
++++ Marlin/Configuration.h
+@@ -79,7 +79,7 @@
+ #define SHOW_BOOTSCREEN
+ 
+ // Show the bitmap in Marlin/_Bootscreen.h on startup.
+-//#define SHOW_CUSTOM_BOOTSCREEN
++#define SHOW_CUSTOM_BOOTSCREEN
+ 
+ // Show the bitmap in Marlin/_Statusscreen.h on the status screen.
+ #define CUSTOM_STATUS_SCREEN_IMAGE
+@@ -775,9 +775,9 @@
+ 
+   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
+   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
+-  #define DEFAULT_bedKp 56.2100
+-  #define DEFAULT_bedKi 5.90
+-  #define DEFAULT_bedKd 356.700
++  #define DEFAULT_BED_KP 56.2100
++  #define DEFAULT_BED_KI 5.90
++  #define DEFAULT_BED_KD 356.700
+ 
+   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
+ #else
